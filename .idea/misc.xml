@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidProject/Schedule/app/src/main/res/drawable/shape_corner.xml" value="0.29128205128205126" />
         <entry key="..\:/AndroidProject/Schedule/app/src/main/res/layout/activity_main.xml" value="0.2857142857142857" />
+        <entry key="..\:/AndroidProject/Schedule/app/src/main/res/layout/item.xml" value="0.2857142857142857" />
+        <entry key="..\:/AndroidProject/Schedule/app/src/main/res/layout/layout.xml" value="0.6285714285714287" />
       </map>
     </option>
   </component>
