@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         recyclerView.layoutManager = lin
         val adapter : RecyclerViewAdapter = RecyclerViewAdapter()
         val div : DividerItemDecoration = DividerItemDecoration(this, 1)
-        recyclerView.addItemDecoration(div)
+        //recyclerView.addItemDecoration(div)
         recyclerView.adapter = adapter
     }
 }
