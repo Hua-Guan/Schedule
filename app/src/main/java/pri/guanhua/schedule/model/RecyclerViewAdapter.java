@@ -1,5 +1,6 @@
 package pri.guanhua.schedule.model;
 
+import android.graphics.Rect;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,8 +22,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     @Override
     public void onBindViewHolder(@NonNull VH holder, int position) {
-        holder.timeHour.setText("23:43");
-        holder.timeDate.setText("2021/10/8");
+        holder.time.setText("23:43  2021/10/27");
         holder.note.setText("为什么？因为这是我的责任！");
     }
 
@@ -33,15 +33,33 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     public static class VH extends RecyclerView.ViewHolder{
 
-        public TextView timeHour;
-        public TextView timeDate;
+        public TextView time;
         public TextView note;
 
         public VH(@NonNull View itemView) {
             super(itemView);
-            timeHour = itemView.findViewById(R.id.time_hour);
-            timeDate = itemView.findViewById(R.id.time_date);
+            time = itemView.findViewById(R.id.time);
             note = itemView.findViewById(R.id.note);
+        }
+    }
+
+    public static class SpacesItemDecoration extends RecyclerView.ItemDecoration{
+
+        private int space;
+
+        public SpacesItemDecoration(int space) {
+            this.space = space;
+        }
+
+        @Override
+        public void getItemOffsets(@NonNull Rect outRect, @NonNull View view, @NonNull RecyclerView parent, @NonNull RecyclerView.State state) {
+            super.getItemOffsets(outRect, view, parent, state);
+
+            outRect.bottom = space;
+            outRect.left = 8;
+            outRect.right = 8;
+            outRect.top = space;
+
         }
     }
 }

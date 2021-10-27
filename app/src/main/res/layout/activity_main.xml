@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:elevation="4dp"
-        android:background="#FFFFFFFF"
+        android:background="#474747"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" >
@@ -21,43 +21,42 @@
             android:layout_height="match_parent"
             android:text="Schedule"
             android:textSize="28sp"
-            android:textColor="#FF000000"
+            android:textColor="#FFFFFFFF"
             android:gravity="center"/>
 
     </androidx.appcompat.widget.Toolbar>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/schedule_recyclerview"
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_container_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="64dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="64dp"
-        android:padding="8dp"
-        android:elevation="8dp"
-        android:background="@drawable/shape_corner"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="56dp"
+        android:background="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
         android:layout_width="match_parent"
         android:layout_height="56dp"
+        android:background="#474747"
         android:elevation="4dp"
-        android:background="#FFFFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" >
+        app:layout_constraintStart_toStartOf="parent">
 
-        <ImageButton
+        <ImageView
             android:layout_width="80dp"
             android:layout_height="match_parent" />
 
-        <ImageButton
+        <ImageView
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:src="@drawable/image_add"
+            android:scaleType="centerInside"/>
 
     </androidx.appcompat.widget.Toolbar>
 
