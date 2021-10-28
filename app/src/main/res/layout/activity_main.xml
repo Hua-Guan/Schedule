@@ -48,23 +48,25 @@
 
         <ImageButton
             android:id="@+id/add_label"
-            android:layout_width="56dp"
-            android:layout_height="56dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/image_label"
             android:layout_gravity="left"/>
 
         <ImageButton
             android:id="@+id/my_schedule"
-            android:layout_width="56dp"
-            android:layout_height="56dp"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@drawable/image_schedule_selected"
             android:layout_gravity="center"/>
 
         <ImageButton
             android:id="@+id/add_plan"
-            android:layout_width="56dp"
-            android:layout_height="56dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_marginRight="16dp"
             android:scaleType="centerInside"
-            android:src="@drawable/image_add"
+            android:background="@drawable/image_add"
             android:layout_gravity="right"/>
 
     </androidx.appcompat.widget.Toolbar>

@@ -14,6 +14,7 @@ import android.util.TypedValue
 class MainActivity : AppCompatActivity() {
     private val homeFragment = HomeFragment()
     private val labelFragment = LabelFragment()
+    private var myScheduleSelected = false
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -24,18 +25,23 @@ class MainActivity : AppCompatActivity() {
             }
         }
         val addLabel = findViewById<ImageButton>(R.id.add_label)
+        val mySchedule = findViewById<ImageButton>(R.id.my_schedule)
         addLabel.setOnClickListener {
             supportFragmentManager.commit {
                 setReorderingAllowed(true)
                 replace(R.id.fragment_container_view, labelFragment)
             }
+            mySchedule.setBackgroundResource(R.drawable.image_schedule)
+            addLabel.setBackgroundResource(R.drawable.image_label_selected)
         }
-        val addPlan = findViewById<ImageButton>(R.id.my_schedule)
-        addPlan.setOnClickListener {
+
+        mySchedule.setOnClickListener {
             supportFragmentManager.commit {
                 setReorderingAllowed(true)
                 replace(R.id.fragment_container_view, homeFragment)
             }
+            mySchedule.setBackgroundResource(R.drawable.image_schedule_selected)
+            addLabel.setBackgroundResource(R.drawable.image_label)
         }
     }
 
