@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:elevation="4dp"
-        android:background="#474747"
+        android:background="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" >
@@ -21,7 +21,6 @@
             android:layout_height="match_parent"
             android:text="Schedule"
             android:textSize="28sp"
-            android:textColor="#FFFFFFFF"
             android:gravity="center"/>
 
     </androidx.appcompat.widget.Toolbar>
@@ -32,33 +31,46 @@
         android:layout_height="match_parent"
         android:layout_marginTop="56dp"
         android:layout_marginBottom="56dp"
-        android:background="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar2"
+        android:id="@+id/bottom_toolbar"
         android:layout_width="match_parent"
         android:layout_height="56dp"
-        android:background="#474747"
+        android:background="#ffffff"
         android:elevation="4dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent" >
 
         <ImageButton
             android:id="@+id/add_label"
-            android:layout_width="80dp"
-            android:layout_height="match_parent" />
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_gravity="left"/>
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+        <ImageButton
+            android:id="@+id/my_schedule"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center"/>
+
+        <ImageButton
+            android:id="@+id/add_plan"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginRight="16dp"
+            android:scaleType="centerInside"
             android:src="@drawable/image_add"
-            android:scaleType="centerInside"/>
+            android:layout_gravity="right"/>
 
     </androidx.appcompat.widget.Toolbar>
+
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
