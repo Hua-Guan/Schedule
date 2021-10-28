@@ -5,7 +5,7 @@ import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import pri.guanhua.schedule.model.RecyclerViewAdapter
+import pri.guanhua.schedule.model.HomeRecyclerViewAdapter
 
 class HomeFragment : Fragment(R.layout.fragment_home) {
 
@@ -14,10 +14,10 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         val recyclerView : RecyclerView = view.findViewById(R.id.schedule_recyclerview)
         val lin = LinearLayoutManager(context)
         recyclerView.layoutManager = lin
-        val adapter = RecyclerViewAdapter()
+        val adapter = HomeRecyclerViewAdapter()
         recyclerView.adapter = adapter
         val spaces = 88
-        val space = RecyclerViewAdapter.SpacesItemDecoration(spaces)
+        val space = HomeRecyclerViewAdapter.SpacesItemDecoration(spaces)
         recyclerView.addItemDecoration(space)
     }
 }

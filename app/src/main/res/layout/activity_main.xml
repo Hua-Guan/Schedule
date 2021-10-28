@@ -48,7 +48,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
-        <ImageView
+        <ImageButton
+            android:id="@+id/add_label"
             android:layout_width="80dp"
             android:layout_height="match_parent" />
 
