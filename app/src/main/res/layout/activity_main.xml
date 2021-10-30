@@ -59,7 +59,7 @@
                 android:layout_gravity="left"
                 android:layout_marginTop="4dp"
                 android:background="@drawable/image_label"
-                app:layout_constraintEnd_toStartOf="@+id/my_schedule"
+                app:layout_constraintEnd_toStartOf="@+id/add_plan"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -80,9 +80,9 @@
                 android:layout_height="32dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="4dp"
-                android:background="@drawable/image_schedule_selected"
+                android:background="@drawable/image_schedule"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/add_plan"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
@@ -93,7 +93,6 @@
                 android:gravity="center"
                 android:text="schedule"
                 android:textSize="10sp"
-                android:textColor="#FF1493"
                 app:layout_constraintEnd_toEndOf="@+id/my_schedule"
                 app:layout_constraintStart_toStartOf="@+id/my_schedule"
                 app:layout_constraintTop_toBottomOf="@+id/my_schedule" />
@@ -104,10 +103,10 @@
                 android:layout_height="36dp"
                 android:layout_gravity="right"
                 android:layout_marginTop="4dp"
-                android:background="@drawable/image_add"
+                android:background="@drawable/image_add_selected"
                 android:scaleType="centerInside"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/my_schedule"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
@@ -117,6 +116,7 @@
                 android:gravity="center"
                 android:text="add"
                 android:textSize="10sp"
+                android:textColor="#FF1493"
                 app:layout_constraintEnd_toEndOf="@+id/add_plan"
                 app:layout_constraintStart_toStartOf="@+id/add_plan"
                 app:layout_constraintTop_toBottomOf="@+id/add_plan" />
