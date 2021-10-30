@@ -46,9 +46,11 @@ public class HomeRecyclerViewAdapter extends RecyclerView.Adapter<HomeRecyclerVi
     public static class SpacesItemDecoration extends RecyclerView.ItemDecoration{
 
         private int space;
+        private int leftAndRight;
 
-        public SpacesItemDecoration(int space) {
+        public SpacesItemDecoration(int space, int leftAndRight) {
             this.space = space;
+            this.leftAndRight = leftAndRight;
         }
 
         @Override
@@ -56,10 +58,11 @@ public class HomeRecyclerViewAdapter extends RecyclerView.Adapter<HomeRecyclerVi
             super.getItemOffsets(outRect, view, parent, state);
 
             outRect.bottom = space;
-            outRect.left = 8;
-            outRect.right = 8;
+            outRect.left = leftAndRight;
+            outRect.right = leftAndRight;
             outRect.top = space;
 
         }
+
     }
 }

@@ -28,8 +28,9 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         recyclerView.layoutManager = lin
         val adapter = HomeRecyclerViewAdapter()
         recyclerView.adapter = adapter
-        val spaces = dp2px(12)
-        val space = HomeRecyclerViewAdapter.SpacesItemDecoration(spaces)
+        val spaces = dp2px(4)
+        val leftAndRight = dp2px(4)
+        val space = HomeRecyclerViewAdapter.SpacesItemDecoration(spaces, leftAndRight)
         recyclerView.addItemDecoration(space)
     }
 
