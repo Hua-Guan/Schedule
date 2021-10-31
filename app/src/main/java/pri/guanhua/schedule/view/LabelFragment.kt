@@ -1,8 +1,9 @@
-package pri.guanhua.schedule
+package pri.guanhua.schedule.view
 
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
+import pri.guanhua.schedule.R
 
 class LabelFragment : Fragment(R.layout.fragment_label){
 

@@ -1,4 +1,4 @@
-package pri.guanhua.schedule
+package pri.guanhua.schedule.view
 
 import android.os.Bundle
 import android.util.TypedValue
@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import pri.guanhua.schedule.R
 import pri.guanhua.schedule.model.HomeRecyclerViewAdapter
 
 class HomeFragment : Fragment(R.layout.fragment_home) {

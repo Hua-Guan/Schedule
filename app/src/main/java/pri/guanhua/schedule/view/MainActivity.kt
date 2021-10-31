@@ -1,16 +1,15 @@
-package pri.guanhua.schedule
+package pri.guanhua.schedule.view
 
+import android.app.TimePickerDialog
 import android.content.res.ColorStateList
 import android.graphics.Color
-import android.graphics.ColorFilter
 import android.os.Bundle
 import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.add
 import androidx.fragment.app.commit
-import androidx.fragment.app.replace
 import android.util.TypedValue
 import android.widget.TextView
+import pri.guanhua.schedule.R
 
 
 class MainActivity : AppCompatActivity() {
