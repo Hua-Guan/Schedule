@@ -8,8 +8,11 @@ import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.commit
 import android.util.TypedValue
+import android.view.View
+import android.widget.NumberPicker
 import android.widget.TextView
 import pri.guanhua.schedule.R
+import kotlin.concurrent.timer
 
 
 class MainActivity : AppCompatActivity() {
@@ -109,6 +112,8 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
+
+
 
     private fun dp2px(dp: Int): Int {
         return TypedValue.applyDimension(

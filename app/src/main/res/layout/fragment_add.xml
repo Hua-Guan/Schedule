@@ -5,7 +5,7 @@
     android:layout_height="match_parent">
 
     <include
-        android:id="@+id/include3"
+        android:id="@+id/inc_memo"
         layout="@layout/cardview_memorandum"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,6 +17,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <include
+        android:id="@+id/inc_time"
         layout="@layout/cardview_time"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -25,7 +26,7 @@
         android:layout_marginEnd="4dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/include3" />
+        app:layout_constraintTop_toBottomOf="@+id/inc_memo" />
 
 
     <Button
