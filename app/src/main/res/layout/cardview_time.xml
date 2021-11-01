@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/cardView2"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="250dp"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent">
@@ -44,13 +44,52 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/recyclerview_time" />
 
-            <NumberPicker
-                android:id="@+id/edit_time"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:timePickerMode="spinner"
-                android:isScrollContainer="true"
-                app:layout_constraintStart_toEndOf="@+id/text_customize_time"
-                app:layout_constraintTop_toTopOf="@+id/text_customize_time" />
+        <NumberPicker
+            android:id="@+id/edit_hour"
+            android:layout_width="24dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="12dp"
+            android:isScrollContainer="true"
+            android:timePickerMode="spinner"
+            app:layout_constraintStart_toEndOf="@+id/text_customize_time"
+            app:layout_constraintTop_toTopOf="@+id/text_customize_time" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:text=":"
+            app:layout_constraintStart_toEndOf="@+id/edit_hour"
+            app:layout_constraintTop_toTopOf="@+id/edit_hour" />
+
+        <NumberPicker
+            android:id="@+id/edit_min"
+            android:layout_width="24dp"
+            android:layout_height="48dp"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintTop_toTopOf="@+id/textView" />
+
+        <NumberPicker
+            android:id="@+id/edit_mon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="24dp"
+            app:layout_constraintStart_toEndOf="@+id/edit_min"
+            app:layout_constraintTop_toTopOf="@+id/edit_min" />
+
+        <NumberPicker
+            android:id="@+id/edit_day"
+            android:layout_width="24dp"
+            android:layout_height="48dp"
+            app:layout_constraintStart_toEndOf="@+id/edit_mon"
+            app:layout_constraintTop_toTopOf="@+id/edit_mon" />
+
+        <NumberPicker
+            android:id="@+id/edit_year"
+            android:layout_width="56dp"
+            android:layout_height="48dp"
+            app:layout_constraintStart_toEndOf="@+id/edit_day"
+            app:layout_constraintTop_toTopOf="@+id/edit_day" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>
